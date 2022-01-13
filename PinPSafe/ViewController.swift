@@ -23,3 +23,14 @@ class ViewController: UIViewController {
         additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: view.bounds.height * CGFloat(value), right: 0)
     }
 }
+
+class ButtonViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        additionalSafeAreaInsets = UIEdgeInsets(top: 0, left: 0, bottom: view.bounds.height, right: 0)
+    }
+}
